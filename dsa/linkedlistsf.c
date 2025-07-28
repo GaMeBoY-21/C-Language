@@ -1,7 +1,6 @@
-// We get list in reverse, like 3 2 1
 #include <stdio.h>
 #include <stdlib.h>
-
+#include<string.h>
 typedef struct node {
     int number;
     struct node*next;
@@ -9,7 +8,7 @@ typedef struct node {
 
 int main() {
     node *list = NULL;
-    for(int i = 1;i<=5;i++){
+    for(int i = 1;i<=3;i++){
         node*n = malloc(sizeof(node));
         if(n == NULL){
             return 1;
