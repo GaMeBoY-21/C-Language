@@ -1,3 +1,4 @@
+//code for reverse and middle code
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -34,4 +35,5 @@ int main(){
         printf("%d ",head->num);
         head = head->next;
     }
+
 }
