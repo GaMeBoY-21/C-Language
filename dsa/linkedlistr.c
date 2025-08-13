@@ -13,20 +13,22 @@ int main(){
         scanf("%d",&n->num);
         n->next = head;
         head = n;
-        // if(head == NULL){
-
-        // }
     }
-    print("enter postion:");
+    printf("enter postion:");
     int pos,new;
     scanf("%d",&pos);
+    printf("enter Number:");
     scanf("%d",&new);
-    for(int i = 0;i<pos;i++){
+    node*ptr = head;
+    for(int i = 0;i<=pos;i++){
         node*n = malloc(sizeof(node));
         if(i == (pos-2)){
-            n->next = 
+            n->num = new;
+            n->next = ptr->next;
+            ptr->next = n;
+            break;
         }
-        n->num = new;
+        ptr = ptr->next;
     }
     while(head!=NULL){
         printf("%d ",head->num);
